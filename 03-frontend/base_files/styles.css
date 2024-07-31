@@ -34,7 +34,7 @@ header nav a {
 }
 
 main {
-    max-width: 1400px;
+    max-width: 2000px;
     margin: 0rem auto;
     padding: 1rem;
     background-color: #eceaea;
@@ -79,6 +79,63 @@ h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+#filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#country-filter {
+    padding: 5px;
+    font-size: 16px;
+}
+
+#places-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.place-card {
+    background-color: white;
+    border-radius: 10px; /* Updated border-radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Updated padding */
+    margin: 20px; /* Updated margin */
+    text-align: center;
+    max-width: 260px;
+    width: 100%;
+    border: 1px solid #ddd; /* Updated border */
+}
+
+.place-card h3 {
+    margin-top: 0;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.place-card p {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.place-card button {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 footer {

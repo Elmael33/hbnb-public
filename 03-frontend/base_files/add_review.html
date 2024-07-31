@@ -7,28 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
-		<header>
-			<img src="logo.png" class="logo">
+	<header>
 			<nav>
-				<a href="index.html">Home</a>
+				<img src="logo.png" class="logo">
 				<a href="login.html" class="login-button">Login</a>
 			</nav>
 		</header>
+		<main>
         <form id="review-form">
             <h2>Add a Review</h2>
             <label for="place">Place:</label>
             <input type="text" id="place" name="place" readonly>
             
-            <label for="review">Review:</label>
+            <label for="review">Your Review:</label>
             <textarea id="review" name="review" required></textarea>
-            
+
+			<label for="rating">Rating:</label>
+            <select id="rating" name="rating">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
             <button type="submit">Submit</button>
         </form>
+	</main>
 		<footer>
 			<p>© 2024 HBnB Evolution. All rights reserved</p>
 		</footer>
-    </main>
     <script src="scripts.js"></script>
 </body>
 </html>

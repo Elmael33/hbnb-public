@@ -7,33 +7,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
-		<header>
-			<img src="logo.png" class="logo">
-			<nav>
-				<a href="index.html">Home</a>
-				<a href="login.html" class="login-button">Login</a>
-			</nav>
-		</header>
-        <section id="place-details">
-            <!-- Place details will be populated dynamically -->
-        </section>
-        <section id="reviews">
-            <!-- Reviews will be populated dynamically -->
-        </section>
-        <section id="add-review">
-            <h2>Add a Review</h2>
-            <form id="review-form">
-                <label for="review-text">Review:</label>
-                <textarea id="review-text" name="review-text" required></textarea>
-                
-                <button type="submit">Submit</button>
+    <header>
+        <nav>
+            <img src="logo.png" class="logo">
+            <a href="login.html" class="login-button">Login</a>
+        </nav>
+    </header>
+        <main>
+            <h1>Beautiful Beach House</h1>
+            <form class="place-details">
+                <div class="place-info">
+                    <p><strong>Host:</strong> John Doe</p>
+                    <p><strong>Price per night:</strong> $150</p>
+                    <p><strong>Location:</strong> Los Angeles, United States</p>
+                    <p><strong>Description:</strong> A beautiful beach house with amazing views...</p>
+                    <p><strong>Amenities:</strong> WiFi, Pool, Air Conditioning</p>
+                </div>
             </form>
-        </section>
-		<footer>
+            <h3>Reviews</h3>
+            <form id="reviews">
+                <div class="review-card">
+                    <p><strong>Jane Smith:</strong></p>
+                    <p>Great place to stay!</p>
+                    <p><strong>Rating:</strong> ★★★★☆</p>
+                </div>
+            </form>
+            <form id="reviews">
+                <div class="review-card">
+                    <p><strong>Robert Brown:</strong></p>
+                    <p>Amazing location and very comfortable.</p>
+                    <p><strong>Rating:</strong> ★★★★★</p>
+                </div>
+            </form>
+            <form class="add-review-button">
+                <a href="add_review.html" class="button">Add a Review</a>
+            </form>
+        </main>
+        <footer>
 			<p>© 2024 HBnB Evolution. All rights reserved</p>
 		</footer>
-    </main>
     <script src="scripts.js"></script>
 </body>
 </html>
